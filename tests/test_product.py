@@ -30,7 +30,7 @@ def test_new_price(capsys, product):
 
 
 def test_product_str(product):
-    assert str(product) == "Samsung Galaxy S23 Ultra, 180000.0. Остаток: 5\n"
+    assert str(product) == "Samsung Galaxy S23 Ultra, 180000.0. Остаток: 5"
 
 
 def test_add_product(product, product2):

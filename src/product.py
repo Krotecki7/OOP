@@ -13,7 +13,7 @@ class Product:
         self.quantity = quantity
 
     def __str__(self):
-        return f"{self.name}, {self.price}. Остаток: {self.quantity}\n"
+        return f"{self.name}, {self.price}. Остаток: {self.quantity}"
 
     def __add__(self, other):
         value_1 = self.price * self.quantity
