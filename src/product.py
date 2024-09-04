@@ -18,7 +18,12 @@ class Product:
         cls.description = product_dict["description"]
         cls.__price = product_dict["price"]
         cls.quantity = product_dict["quantity"]
-        return cls(name=cls.name, description=cls.description, price=cls.__price, quantity=cls.quantity)
+        return cls(
+            name=cls.name,
+            description=cls.description,
+            price=cls.__price,
+            quantity=cls.quantity,
+        )
 
     @property
     def price(self):
