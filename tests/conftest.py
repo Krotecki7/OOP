@@ -25,4 +25,11 @@ def category(product, product2):
 
 @pytest.fixture
 def product2():
-    return Product("Iphone 15", "512GB, Gray space", 210000.0, 8)
+    return Product("Iphone 15", "512GB, Gray space", 210000.0, 8)=======
+def category(product):
+    return Category(
+        name="Смартфоны",
+        description="Смартфоны, как средство не только коммуникации, но и получения функций для удобства жизни",
+        products=[product]
+    )
+
