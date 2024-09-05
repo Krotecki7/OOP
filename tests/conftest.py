@@ -14,13 +14,10 @@ def product():
     )
 
 
-product_1 = ["55\" QLED 4K", "Фоновая подсветка", 123000.0, 7]
-
-
 @pytest.fixture
-def category():
+def category(product):
     return Category(
-        name="Телевизоры",
-        description="Современный телевизор, который позволяет наслаждаться просмотром",
-        products=[product_1]
+        name="Смартфоны",
+        description="Смартфоны, как средство не только коммуникации, но и получения функций для удобства жизни",
+        products=[product]
     )
