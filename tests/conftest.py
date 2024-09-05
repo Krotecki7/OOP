@@ -14,9 +14,6 @@ def product():
     )
 
 
-product_1 = ["Sony QLED 4K", "Фоновая подсветка", 123000.0, 7]
-
-
 @pytest.fixture
 def category(product, product2):
     return Category(
