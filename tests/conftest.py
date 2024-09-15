@@ -75,3 +75,13 @@ def lawngrass2():
         "5 дней",
         "Темно-зеленый",
     )
+
+
+@pytest.fixture
+def invalid_product():
+    return Product("Бракованный товар", "Неверное количество", 1000.0, 0)
+
+
+@pytest.fixture
+def empty_category():
+    return Category("Пустая категория", "Категория без продуктов", [])
