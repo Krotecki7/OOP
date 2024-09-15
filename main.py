@@ -3,7 +3,6 @@ from src.smartphone import Smartphone
 from src.lawngrass import LawnGrass
 from src.category import Category
 
-
 if __name__ == '__main__':
     try:
         product_invalid = Product("Бракованный товар", "Неверное количество", 1000.0, 0)
